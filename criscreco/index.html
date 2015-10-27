@@ -1,0 +1,228 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Computer Hellsehen</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>        
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Computer-Hellsehen</h1>
+        <h2>von Cris Creco</h2>
+        <p>Dies ist ein Webseite, die hellsehen kann.</p>
+      </div>
+    </div>
+
+    <div class="container" id="questions">
+      <div>  
+        
+      <!-- start -->
+      <div class="row" id="start">
+        <div class="col-md-12">
+          <p>Bitte beantworten Sie die Fragen, die Ihnen hier gestellt werden.</p>
+          <p>
+              <a class="btn btn-default" role="button" id="begin">Weiter</a>
+          </p>
+       </div>
+      </div>
+  
+      <!-- 50 -->
+      <div class="row" id="init">
+        <div class="col-md-12">
+          <p>Ziehen Sie bitte eine Karte von meinem Gehilfen.
+          <br/>Haben Sie eine Karte gezogen?</p>
+          <p>
+              <a class="btn btn-default" role="button" id="karteJa">Ja</a>
+              <a class="btn btn-default" role="button" id="karteNein">Nein</a>
+          </p>
+       </div>
+      </div>
+      
+      <!-- 1400 -->
+      <div class="row" id="keineKarte">
+        <div class="col-md-12">
+          <p><b>Sie haben gelogen, sie haben ja eine!</b>
+          <br/>Du! Du! Du!</p>
+          <p>
+              <a class="btn btn-default" role="button" id="weiterInit">Weiter</a>
+          </p>
+       </div>
+      </div>
+      
+      <!-- 200 -->
+      <div class="row" id="roteKarte">
+        <div class="col-md-12">
+          <p>Haben Sie eine rote Karte gezogen?</p>
+          <p>
+              <a class="btn btn-default" role="button" id="karteRot">Ja</a>
+              <a class="btn btn-default" role="button" id="karteSchwarz">Nein</a>
+          </p>
+       </div>
+      </div>
+      
+      <!-- 300 -->
+      <div class="row" id="pikKarte">
+        <div class="col-md-12">
+          <p>Eventuell eine Pik Karte?</p>
+          <p>
+              <a class="btn btn-default" role="button" id="kartePik">Ja</a>
+              <a class="btn btn-default" role="button" id="karteKreuz">Nein</a>
+          </p>
+       </div>
+      </div>   
+      
+      <!-- 600 -->
+      <div class="row" id="herzKarte">
+        <div class="col-md-12">
+          <p>Eventuell eine Herz Karte?</p>
+          <p>
+              <a class="btn btn-default" role="button" id="karteHerz">Ja</a>
+              <a class="btn btn-default" role="button" id="karteKaro">Nein</a>
+          </p>
+       </div>
+      </div>
+
+      <!-- 3000 -->
+      <div class="row" id="bildKarte">
+        <div class="col-md-12">
+          <p>Vielleicht eine Bildkarte?</p>
+          <p>
+              <a class="btn btn-default" role="button" id="karteBild">Ja</a>
+              <a class="btn btn-default" role="button" id="karteZahl">Nein</a>
+          </p>
+       </div>
+      </div>
+
+      <!-- 900 -->
+      <div class="row" id="ueberlege">
+        <div class="col-md-12">
+          <p>Ich überlege...</p>
+          <p>
+              <a class="btn btn-default" role="button" id="sprachwahl">Weiter</a>
+          </p>
+       </div>
+      </div>
+      
+      <!-- 910 japanisch -->
+      <div class="row" id="japanisch">
+        <div class="col-md-12">
+          <h2>私はあなたのカードを見つけます。</h2>
+          <p>Entschuldigung, das war japanisch.</p>
+          <p>
+              <a class="btn btn-default" role="button" id="weiterJP">Weiter</a>
+          </p>
+       </div>
+      </div>
+
+      <!-- 950 russisch -->
+      <div class="row" id="russisch">
+        <div class="col-md-12">
+          <h2>Это хорошо.</h2>
+          <p>Entschuldigung, das war russisch.</p>
+          <p>
+              <a class="btn btn-default" role="button" id="weiterRU">Weiter</a>
+          </p>
+       </div>
+      </div>
+
+      <!-- 965 englisch -->
+      <div class="row" id="englisch">
+        <div class="col-md-12">
+          <h2>Very-happy-nice.</h2>
+          <p>Entschuldigung, das war englisch.</p>
+          <p>
+              <a class="btn btn-default" role="button" id="weiterEN">Weiter</a>
+          </p>
+       </div>
+      </div>
+
+      
+      <div class="row" id="finden">
+        <div class="col-md-12">
+          <h2>Ich finde Ihre Karte.</h2>
+          <p>Sie haben...</p>
+          <p>
+              <a class="btn btn-default" role="button" id="weiterLoesung">Weiter</a>
+          </p>
+       </div>
+      </div>
+      
+      
+      <div class="row" id="loesung">
+        <div class="col-md-12">
+          <div class="row" id="herzSieben"> 
+            <h2>Herz Sieben</h2>
+            <object type="image/svg+xml" width="100" height="150" data="img/SVG-cards-1.3/7_of_hearts.svg"></object>
+          </div>
+          <div class="row" id="herzBube">  
+            <h2>Herz Bube</h2>
+            <object type="image/svg+xml" width="100" height="150" data="img/SVG-cards-1.3/jack_of_hearts2.svg"></object>
+          </div>
+          <div class="row" id="karoZehn">  
+            <h2>Karo Zehn</h2>
+            <object type="image/svg+xml" width="100" height="150" data="img/SVG-cards-1.3/10_of_diamonds.svg"></object>
+          </div>
+          <div class="row" id="karoKoenig">
+            <h2>Karo König</h2>
+            <object type="image/svg+xml" width="100" height="150" data="img/SVG-cards-1.3/king_of_diamonds2.svg"></object>
+          </div>
+          <div class="row" id="kreuzAcht">  
+            <h2>Kreuz Acht</h2>
+            <object type="image/svg+xml" width="100" height="150" data="img/SVG-cards-1.3/8_of_clubs.svg"></object>
+          </div>
+          <div class="row" id="kreuzKoenig">  
+            <h2>Kreuz König</h2>
+            <object type="image/svg+xml" width="100" height="150" data="img/SVG-cards-1.3/king_of_clubs2.svg"></object>
+          </div>
+          <div class="row" id="pikNeun">  
+            <h2>Pik Neun</h2>
+            <object type="image/svg+xml" width="100" height="150" data="img/SVG-cards-1.3/9_of_spades.svg"></object>
+          </div>
+          <div class="row" id="pikDame">  
+            <h2>Pik Dame</h2>
+            <object type="image/svg+xml" width="100" height="150" data="img/SVG-cards-1.3/queen_of_spades2.svg"></object>
+          </div>
+       </div>
+      </div>   
+      </div>
+      <hr>
+
+      <footer>
+        <p>&copy; Cris Creco 1984 + 2015</p>
+      </footer>
+    </div> <!-- /container -->        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+        <script src="js/main.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+
+    </body>
+</html>
